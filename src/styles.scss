@@ -5,6 +5,16 @@
 
 .btn-primary{
     background-color: $primary;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: $off-white;
+    cursor: pointer;
+}
+
+button.btn-primary:hover {
+    background-color: #2aa2b9;
 }
 
 body{

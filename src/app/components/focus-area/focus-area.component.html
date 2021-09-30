@@ -1,0 +1,12 @@
+<h2>Research Areas</h2>
+
+<div class="focus-area">
+    <div class="card" *ngFor="let item of focusArea">
+        <app-container>
+            <div class="heading">{{ item.label }}</div>
+            <div class="content">
+                <p-chip class="item" *ngFor="let i of item.value" [label]="i"></p-chip>
+            </div>
+        </app-container>
+    </div>
+</div>

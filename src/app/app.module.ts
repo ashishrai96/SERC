@@ -12,6 +12,8 @@ import { PeopleComponent } from './components/people/people.component';
 import { PanelComponent } from './components/people/panel/panel.component';
 import { ImageCardComponent } from './components/people/image-card/image-card.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FocusAreaComponent } from './components/focus-area/focus-area.component';
+import { PublicationComponent } from './components/publication/publication.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ContactComponent } from './components/contact/contact.component';
     PeopleComponent,
     PanelComponent,
     ImageCardComponent,
-    ContactComponent
+    ContactComponent,
+    FocusAreaComponent,
+    PublicationComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,42 @@
-<p>contact works!</p>
+<div class="contact">
+    <div class="left">
+        <app-container>
+            <div class="location">
+                <i class="pi pi-map-marker"></i>
+                <div class="address">
+                    <table>
+                        <tr><td colspan="2" style="font-weight: 700;">International Institute of Information Technology</td></tr>
+                        <tr><td colspan="2">Prof. C R Rao Road</td></tr>
+                        <tr><td colspan="2">Gachibowli, Hyderabad 500 032</td></tr>
+                        <tr><td colspan="2">Telangana, INDIA</td></tr>
+                        <tr><td>Phone: </td><td>+91-40-6653 1000</td></tr>
+                        <tr><td>Fax: </td><td>+91-40-6653 1413</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="map">
+                <img [src]="imagePreviewUrl" alt="IIITH Location">
+            </div>
+        </app-container>
+    </div>
+    <div class="right">
+        <app-container style="width: 95%;">
+            <div class="title">Share some Feedback!!</div>
+            <form class="form" #contactForm="ngForm" (ngSubmit)="onSubmit()">
+                <div class="form-control">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" name="name" ngModel />
+                </div>
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" name="email" ngModel />
+                </div>
+                <div class="form-control">
+                    <label>Message</label>
+                    <textarea type="text" placeholder="Enter your message" name="message" ngModel></textarea>
+                </div>
+                <button class="btn-primary" type="submit">Send</button>
+            </form>
+        </app-container>
+    </div>
+</div>
