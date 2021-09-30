@@ -1,0 +1,18 @@
+<app-container>
+    <div class="card-container">
+        <div class="card">
+            <div class="heading">
+                <img [src]="object.img" alt="">
+            </div>
+            <div class="body">
+                <div class="title">{{ object.name }}</div>
+                <div class="desg">{{ object.designation? object.designation : '' }}</div>
+            </div>
+            <div class="footer" *ngIf="object?.researchInterest">
+                <div class="interest">
+                    <p-chip [label]="i" *ngFor="let i of object.researchInterest"></p-chip>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-container>

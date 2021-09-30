@@ -1,0 +1,89 @@
+<div class="home">
+    <div class="image-title">
+        Gallery
+    </div>
+    <div class="image-container">
+        <div class="image-container__banner">
+            <p-image *ngFor="let img of bannerImages" 
+                    [src]="img.src" 
+                    [alt]="img.alt" width="30%" height="100px"
+                    [preview]="true"></p-image>
+        </div>
+    </div>
+
+    <div class="bottom-content">
+        <div class="about-container">
+            <app-container style="flex: 1;">
+                <div class="about-body">
+                    <div class="heading">
+                        <div class="title">
+                            About
+                        </div>
+                        <div class="btn-container">
+                            <!-- <button class="btn-primary" (click)="onAboutButtonClick()">{{ (isEdit)?'Save':'Edit' }}</button> -->
+                            <div class="icon-container" (click)="onAboutButtonClick()">
+                                <i class="pi pi-pencil" *ngIf="!isEdit"></i>
+                                <i class="pi pi-save" *ngIf="isEdit"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p-editor #editor [(ngModel)]="aboutText" [style]="{flex:1}" [readonly]="!isEdit">
+                        <ng-template pTemplate="header">
+                            <div [ngStyle]="{'display': isEdit?'block':'none', 'height':isEdit?'auto':'0', 'padding': isEdit?'8px':'0px'}">
+                                <span class="ql-formats">
+                                    <select class="ql-header">
+                                      <option value="1">Heading</option>
+                                      <option value="2">Subheading</option>
+                                      <option selected>Normal</option>
+                                    </select>
+                                    <select class="ql-font">
+                                      <option selected>Sans Serif</option>
+                                      <option value="serif">Serif</option>
+                                      <option value="monospace">Monospace</option>
+                                    </select>
+                                </span>
+                                <span class="ql-formats">
+                                    <button class="ql-bold" aria-label="Bold" type="button"></button>
+                                    <button class="ql-italic" aria-label="Italic" type="button"></button>
+                                    <button class="ql-underline" aria-label="Underline" type="button"></button>
+                                </span>
+                                <span class="ql-formats">
+                                    <select class="ql-color"></select>
+                                    <select class="ql-background"></select>
+                                </span>
+                                <span class="ql-formats">
+                                    <button class="ql-list" value="ordered" aria-label="Ordered List" type="button"></button>
+                                    <button class="ql-list" value="bullet" aria-label="Unordered List" type="button"></button>
+                                    <select class="ql-align">
+                                        <option selected></option>
+                                        <option value="center"></option>
+                                        <option value="right"></option>
+                                        <option value="justify"></option>
+                                    </select>
+                                </span>
+                                <span class="ql-formats">
+                                    <button class="ql-link" aria-label="Insert Link" type="button"></button>
+                                    <button class="ql-image" aria-label="Insert Image" type="button"></button>
+                                    <button class="ql-code-block" aria-label="Insert Code Block" type="button"></button>
+                                </span>
+                                <span class="ql-formats">
+                                    <button class="ql-clean" aria-label="Remove Styles" type="button"></button>
+                                </span>
+                            </div>
+                        </ng-template>
+                    </p-editor>
+                    <!-- <div #aboutText class="about-text" *ngIf="!isEdit"> -->
+                    <!-- </div> -->
+                </div>
+            </app-container>
+        </div>
+        <div class="twitter-container">
+            <app-container>
+                <div class="twitter-body">
+                    <a #twttr class="twitter-timeline" data-width="220" data-theme="dark" href="https://twitter.com/SERC_IIITH?ref_src=twsrc%5Etfw">Tweets by SERC_IIITH</a>
+                    <!-- <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 220px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px; height: 7089.31px;" data-widget-id="profile:SERC_IIITH" title="Twitter Timeline" src="https://twitter.com/SERC_IIITH?ref_src=twsrc%5Etfw"></iframe> -->
+                </div>
+            </app-container>
+        </div>
+    </div>
+</div>

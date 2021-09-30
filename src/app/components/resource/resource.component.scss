@@ -1,0 +1,33 @@
+.resource{
+    margin: 15px;
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        align-items: center;
+
+        .title {
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .icon-container i {
+            font-size: 12px;
+            border: 1px solid;
+            padding: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+
+    p-editor.p-element {
+        flex: 1;
+
+        .p-editor-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+    }
+}

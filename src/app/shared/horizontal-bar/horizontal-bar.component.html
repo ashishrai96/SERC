@@ -1,0 +1,7 @@
+<div class="hor-bar">
+    <div class="nav-item-group">
+        <div class="nav-item" [ngClass]="{'active':item.id == selectedId}" *ngFor="let item of menu" (click)="onMenuClick(item)">
+            {{ item.name }}
+        </div>
+    </div>
+</div>

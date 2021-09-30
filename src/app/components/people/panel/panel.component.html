@@ -1,0 +1,12 @@
+<div class="panel">
+    <div class="container" *ngFor="let obj of object">
+        <div class="heading">
+            {{ obj.label }}
+        </div>
+        <div class="body">
+            <ng-container *ngFor="let item of obj.value">
+                <app-image-card [object]="item"></app-image-card>
+            </ng-container>
+        </div>
+    </div>
+</div>
