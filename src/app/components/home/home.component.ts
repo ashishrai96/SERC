@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { HomeService } from './services/home.service';
+import {MessageService} from 'primeng/api';
+
 
 @Component({
   selector: 'app-home',
@@ -9,7 +11,7 @@ import { HomeService } from './services/home.service';
 })
 export class HomeComponent implements OnInit {
 
-  aboutText:any = "";
+  eventText:any = "";
   isEdit:boolean = false;
 
   bannerImages:any[] = [
@@ -26,16 +28,21 @@ export class HomeComponent implements OnInit {
     { src: "assets/images/serc_image2.png", alt: "SERC Apply Now" },
   ];
 
-  constructor(private service: HomeService) { }
+  constructor(private service: HomeService, private messageService: MessageService) { }
 
   ngOnInit(): void {
-    this.aboutText = this.service.getHome();
+    this.eventText = this.service.getEvent();
   }
 
-  onAboutButtonClick(){
-    console.log(this.aboutText);
+  ngAfterViewInit(){
+    (<any>window).twttr.widgets.load();
+  }
+
+  onEventButtonClick(){
+    // console.log(this.eventText);
     if(this.isEdit){  //Saving
-      this.service.setHome(this.aboutText);
+      this.service.setEvent(this.eventText);
+      this.messageService.add({severity:'success', summary: 'Success', detail: 'Content Saved Successfully!!'});
     }
     
     this.isEdit = !this.isEdit;

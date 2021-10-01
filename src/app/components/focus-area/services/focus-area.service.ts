@@ -4,13 +4,13 @@ import { Constants } from 'src/app/models/constants.model';
 @Injectable({
   providedIn: 'root'
 })
-export class HomeService {
+export class FocusAreaService {
 
-  private _homeEvent:string = Constants.HOME_EVENT;
+  private _focusArea = Constants.FOCUS_AREA;
 
   constructor() { }
 
-  getEvent(){ return this._homeEvent; }
+  setFocusArea(val) { this._focusArea = val; }
 
-  setEvent(val){ this._homeEvent = val; }
+  getFocusArea() { return this._focusArea; }
 }

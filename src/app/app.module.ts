@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,9 @@ import { ImageCardComponent } from './components/people/image-card/image-card.co
 import { ContactComponent } from './components/contact/contact.component';
 import { FocusAreaComponent } from './components/focus-area/focus-area.component';
 import { PublicationComponent } from './components/publication/publication.component';
+import { PubCardComponent } from './components/publication/pub-card/pub-card.component';
+import { AboutComponent } from './components/about/about.component';
+import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -25,16 +29,19 @@ import { PublicationComponent } from './components/publication/publication.compo
     ImageCardComponent,
     ContactComponent,
     FocusAreaComponent,
-    PublicationComponent
+    PublicationComponent,
+    PubCardComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     SharedModule
   ],
-  providers: [],
+  providers: [ MessageService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

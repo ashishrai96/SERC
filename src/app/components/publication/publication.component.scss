@@ -1,0 +1,12 @@
+@import '/src/assets/variables.scss';
+
+.publication {
+    margin: 15px;
+
+    .title {
+        font-size: 14px;
+        margin: 0px 10px;
+        font-weight: 700;
+        color: $black;
+    }
+}

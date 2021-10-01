@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { MessageService } from 'primeng/api';
 import { ResourceService } from './services/resource.service';
 
 @Component({
@@ -23,7 +24,7 @@ export class ResourceComponent implements OnInit {
     { name: 'Posters', id: 5 }
   ];
 
-  constructor(private service: ResourceService) { }
+  constructor(private service: ResourceService, private messageService: MessageService) { }
 
   ngOnInit(): void {
     this.changeMenu(this.subMenu[0]);
@@ -77,9 +78,10 @@ export class ResourceComponent implements OnInit {
           this.service.setPosters(this.contentText);
           break;
       }
+      this.messageService.add({severity:'success', summary: 'Success', detail: 'Content Saved Successfully!!'});
     }
     this.isEdit = !this.isEdit;
-    console.log(this.contentText);
+    // console.log(this.contentText);
   }
 
 }

@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'app-panel',
@@ -8,11 +9,26 @@ import { Component, Input, OnInit } from '@angular/core';
 export class PanelComponent implements OnInit {
 
   @Input() object:any;
+  @Output() onUpdate = new EventEmitter<any>();
+
+  objectCopy;
 
   constructor() { }
 
+  ngOnChanges(){
+    this.objectCopy = _.cloneDeep(this.object);
+  }
+
   ngOnInit(): void {
-    console.log("panel =>", this.object);
+  }
+
+  onCardUpdate(event, idx, rIdx){
+    // console.log(event, idx, rIdx);
+    this.onUpdate.emit({
+      card: event,
+      cardIdx: idx,
+      groupIdx: rIdx
+    });
   }
 
 }

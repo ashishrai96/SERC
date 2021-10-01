@@ -1,0 +1,21 @@
+<div class="pub-card">
+    <div class="container">
+        <div class="authors">
+            <p-chip *ngFor="let author of object.authors" [label]="author.text"></p-chip>
+        </div>
+        <div class="title">
+            {{ object.title }}
+        </div>
+        <div class="info">
+            <div class="tags">
+                <span>Pages: <b>{{ object.pages }}</b></span>
+                <span>Year: <b>{{ object.year }}</b></span>
+            </div>
+            <div class="link">
+                <a href="{{ object.url }}" target="_blank">
+                    <i class="pi pi-external-link"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

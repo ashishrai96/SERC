@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  publicationGetByQuery: 'https://dblp.org/search/publ/api?q=iiith&format=json&h=500'
 };
 
 /*

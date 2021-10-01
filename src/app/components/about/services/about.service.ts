@@ -4,13 +4,13 @@ import { Constants } from 'src/app/models/constants.model';
 @Injectable({
   providedIn: 'root'
 })
-export class HomeService {
+export class AboutService {
 
-  private _homeEvent:string = Constants.HOME_EVENT;
+  private _homeAbout:string = Constants.HOME_ABOUT;
 
   constructor() { }
 
-  getEvent(){ return this._homeEvent; }
+  getHome(){ return this._homeAbout; }
 
-  setEvent(val){ this._homeEvent = val; }
+  setHome(val){ this._homeAbout = val; }
 }

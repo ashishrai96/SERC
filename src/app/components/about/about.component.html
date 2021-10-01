@@ -1,45 +1,33 @@
-<div class="home">
-    <div class="image-title">
-        Gallery
-    </div>
-    <div class="image-container">
-        <div class="image-container__banner">
-            <p-image *ngFor="let img of bannerImages" 
-                    [src]="img.src" 
-                    [alt]="img.alt" width="30%" height="100px"
-                    [preview]="true"></p-image>
-        </div>
-    </div>
-
+<div class="about-container">
     <div class="bottom-content">
         <div class="about-container">
             <app-container style="flex: 1;">
                 <div class="about-body">
                     <div class="heading">
                         <div class="title">
-                            Events
+                            About
                         </div>
                         <div class="btn-container">
                             <!-- <button class="btn-primary" (click)="onAboutButtonClick()">{{ (isEdit)?'Save':'Edit' }}</button> -->
-                            <div class="icon-container" (click)="onEventButtonClick()">
+                            <div class="icon-container" (click)="onAboutButtonClick()">
                                 <i class="pi pi-pencil" *ngIf="!isEdit"></i>
                                 <i class="pi pi-save" *ngIf="isEdit"></i>
                             </div>
                         </div>
                     </div>
-                    <p-editor #editor [(ngModel)]="eventText" [style]="{flex:1}" [readonly]="!isEdit">
+                    <p-editor #editor [(ngModel)]="aboutText" [style]="{flex:1}" [readonly]="!isEdit">
                         <ng-template pTemplate="header">
                             <div [ngStyle]="{'display': isEdit?'block':'none', 'height':isEdit?'auto':'0', 'padding': isEdit?'8px':'0px'}">
                                 <span class="ql-formats">
                                     <select class="ql-header">
-                                      <option value="1">Heading</option>
-                                      <option value="2">Subheading</option>
-                                      <option selected>Normal</option>
+                                        <option value="1">Heading</option>
+                                        <option value="2">Subheading</option>
+                                        <option selected>Normal</option>
                                     </select>
                                     <select class="ql-font">
-                                      <option selected>Sans Serif</option>
-                                      <option value="serif">Serif</option>
-                                      <option value="monospace">Monospace</option>
+                                        <option selected>Sans Serif</option>
+                                        <option value="serif">Serif</option>
+                                        <option value="monospace">Monospace</option>
                                     </select>
                                 </span>
                                 <span class="ql-formats">
@@ -73,14 +61,7 @@
                         </ng-template>
                     </p-editor>
                     <!-- <div #aboutText class="about-text" *ngIf="!isEdit"> -->
-                    <!-- </div> -->
-                </div>
-            </app-container>
-        </div>
-        <div class="twitter-container">
-            <app-container>
-                <div class="twitter-body">
-                    <a class="twitter-timeline" data-width="220" data-theme="dark" href="https://twitter.com/SERC_IIITH?ref_src=twsrc%5Etfw">Tweets by SERC_IIITH</a>
+                        <!-- </div> -->
                 </div>
             </app-container>
         </div>

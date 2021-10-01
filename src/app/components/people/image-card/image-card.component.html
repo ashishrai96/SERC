@@ -10,7 +10,13 @@
             </div>
             <div class="footer" *ngIf="object?.researchInterest">
                 <div class="interest">
-                    <p-chip [label]="i" *ngFor="let i of object.researchInterest"></p-chip>
+                    <!-- <p-chip [label]="i" *ngFor="let i of object.researchInterest"></p-chip> -->
+                    <p-chips [(ngModel)]="object.researchInterest" [addOnTab]="true" [addOnBlur]="true" [disabled]="!isEdit">
+                    </p-chips>
+                </div>
+                <div class="icon-container" (click)="onEditButtonClick()">
+                    <i class="pi pi-pencil" *ngIf="!isEdit"></i>
+                    <i class="pi pi-save" *ngIf="isEdit"></i>
                 </div>
             </div>
         </div>

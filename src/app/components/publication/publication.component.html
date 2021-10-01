@@ -1,1 +1,10 @@
-<p>publication works!</p>
+<div class="publication">
+    <app-container>
+        <div class="title">Publications</div>
+        <div class="card">
+            <ng-container *ngFor="let item of pubs">
+                <app-pub-card [object]="item"></app-pub-card>
+            </ng-container>
+        </div>
+    </app-container>
+</div>

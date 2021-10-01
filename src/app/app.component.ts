@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
   
   navMenuArray = [
     { name: 'Home', id: 0 },
+    { name: 'About', id: 6 },
     { name: 'People', id: 1 },
     { name: 'Publications', id: 2 },
     { name: 'Focus Area', id: 3 },
@@ -53,6 +54,10 @@ export class AppComponent implements OnInit {
       case 5:
         this.router.navigate(['contact']);
         this.selectedId = 5;
+        break;
+      case 6:
+        this.router.navigate(['about']);
+        this.selectedId = 6;
         break;
     }
   }

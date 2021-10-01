@@ -1,0 +1,62 @@
+.about-container{
+    margin: 10px;
+
+    .bottom-content {
+        display: flex;
+        align-items: flex-start;
+
+        .about-container {
+            display: flex;
+            flex: 1;
+            margin: 10px;
+
+            .about-body {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+
+                .heading {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                    align-items: center;
+
+                    .title {
+                        font-weight: 700;
+                        font-size: 14px;
+                    }
+
+                    .icon-container i {
+                        font-size: 12px;
+                        border: 1px solid;
+                        padding: 5px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                }
+
+                p-editor.p-element {
+                    flex: 1;
+
+                    .p-editor-container {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .twitter-container {
+            display: flex;
+            margin: 10px;
+            flex: 0.5;
+            height: 350px;
+
+            .twitter-body {
+                height: inherit;
+                overflow-y: auto;
+            }
+        }
+    }
+}

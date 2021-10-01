@@ -1,11 +1,11 @@
 <div class="panel">
-    <div class="container" *ngFor="let obj of object">
+    <div class="container" *ngFor="let obj of object; let rIdx=index">
         <div class="heading">
             {{ obj.label }}
         </div>
         <div class="body">
-            <ng-container *ngFor="let item of obj.value">
-                <app-image-card [object]="item"></app-image-card>
+            <ng-container *ngFor="let item of obj.value; let idx = index;">
+                <app-image-card [object]="item" (onUpdate)="onCardUpdate($event, idx, rIdx)"></app-image-card>
             </ng-container>
         </div>
     </div>

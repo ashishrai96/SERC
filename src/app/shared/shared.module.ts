@@ -5,6 +5,9 @@ import { SidebarModule } from "primeng/sidebar";
 import { ImageModule } from "primeng/image";
 import {EditorModule} from 'primeng/editor';
 import { ChipModule } from 'primeng/chip';
+import {ChipsModule} from 'primeng/chips';
+import {ToastModule} from 'primeng/toast';
+
 
 
 import { ContainerComponent } from './container/container.component';
@@ -24,13 +27,17 @@ import { FormsModule } from '@angular/forms';
     ImageModule,
     FormsModule,
     EditorModule,
-    ChipModule
+    ChipModule,
+    ChipsModule,
+    ToastModule
   ],
   exports: [
     SidebarModule,
     ImageModule,
     EditorModule,
     ChipModule,
+    ChipsModule,
+    ToastModule,
     ContainerComponent,
     HorizontalBarComponent
   ]
