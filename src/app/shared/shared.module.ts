@@ -13,6 +13,7 @@ import {ToastModule} from 'primeng/toast';
 import { ContainerComponent } from './container/container.component';
 import { HorizontalBarComponent } from './horizontal-bar/horizontal-bar.component';
 import { FormsModule } from '@angular/forms';
+import { LoaderComponent } from './loader/loader.component';
 
 
 
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     ContainerComponent,
     HorizontalBarComponent,
+    LoaderComponent,
   ],
   imports: [
     CommonModule,
@@ -39,7 +41,8 @@ import { FormsModule } from '@angular/forms';
     ChipsModule,
     ToastModule,
     ContainerComponent,
-    HorizontalBarComponent
+    HorizontalBarComponent,
+    LoaderComponent
   ]
 })
 export class SharedModule { }

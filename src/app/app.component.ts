@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   title = 'serc';
   visibleSidebar1:boolean = false;
   selectedId:number;
+  currentYear: number = (new Date()).getFullYear();
   
   navMenuArray = [
     { name: 'Home', id: 0 },

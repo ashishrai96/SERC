@@ -72,6 +72,41 @@
                 }
             }
         }
+    } 
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    font-size: 11px;
+    background-color: $off-black;
+    color: $off-white-blur;
+
+    .left {
+        flex: 1;
+        display: flex;
+        align-items: center;
     }
-    
+
+    .right a {
+        text-decoration: none !important;
+        
+        i {
+            color: $off-white;
+            margin: 0px 5px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+
+        span.linked-in {
+            background-color: $off-white;
+            color: $off-black;
+            padding: 1px 3px;
+            font-weight: 700;
+            cursor: pointer;
+            border-radius: 2px;
+            margin: 0px 5px;
+        }
+    }
 }
