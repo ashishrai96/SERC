@@ -30,7 +30,7 @@ export class FocusAreaComponent implements OnInit {
 
   onEditButtonClick(label){
     // console.log(this.focusArea);
-    if(this.isEdit){  //saving
+    if(this.isEdit[label]){  //saving
       this.service.setFocusArea(this.focusArea);
       this.focusArea = _.cloneDeep(this.service.getFocusArea());
       this.messageService.add({severity:'success', summary: 'Success', detail: 'Content Saved Successfully!!'});
