@@ -1,0 +1,17 @@
+p-toast{
+
+    .p-toast {
+        width: 250px !important;
+        font-size: 12px !important;
+        
+        .p-toast-message .p-toast-message-content .p-toast-message-icon,
+        .p-toast-message.p-toast-message-success .p-toast-icon-close .p-toast-icon-close-icon {
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            
+            .p-toast-message .p-toast-message-content .p-toast-message-text {
+                font-size: 12px !important;
+            }
+        }
+    }
+}

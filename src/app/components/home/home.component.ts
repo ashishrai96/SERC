@@ -35,7 +35,9 @@ export class HomeComponent implements OnInit {
   }
 
   ngAfterViewInit(){
-    // (<any>window).twttr.widgets.load();
+    try{
+      (<any>window).twttr.widgets.load();
+    }catch{}
   }
 
   onEventButtonClick(){
