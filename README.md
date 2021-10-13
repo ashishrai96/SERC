@@ -7,7 +7,7 @@
 
 >### Deployment Details
 
-* This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7, whose **built artifacts** has been provided in a folder named **docs**.
+* This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7, whose **built artifacts** has been provided in a folder named **serc**.
 
 - Two ways to checkout the webpages, as follows:
 
@@ -25,12 +25,12 @@
             
         * After having **http-server** installed, execute the below snippets, to run the code.
 
-                `http-server <path>/docs`
+                `http-server <path>/serc`
             
-            **Discaimer** : _\<path\>_ is the directory where the folder named - **docs**, that has built artifacts, present.
+            **Discaimer** : _\<path\>_ is the directory where the folder named - **serc**, that has built artifacts, present.
 
-            `Example : /home/user/Documents/docs`
-            Here path is _/home/user/Documents_ which has **docs** folder.
+            `Example : /home/user/Documents/serc`
+            Here path is _/home/user/Documents_ which has **serc** folder.
 
     2. You can also check out the running code, by clicking on the below link.
 

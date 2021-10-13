@@ -56,8 +56,26 @@
 
         .bar {
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             margin: 5px 10px;
+            align-items: center;
+
+            .admin-tag {
+                p-chip{
+                    margin: 5px;
+    
+                    .p-chip .p-chip-text{
+                        font-size: 12px;
+                        margin: 0px;
+                        font-weight: 700;
+                    }
+
+                    .p-chip .p-chip-icon{
+                        color: #c73939;
+                        font-size: 12px;
+                    }
+                }
+            }
 
             .data {
                 text-align: end;
