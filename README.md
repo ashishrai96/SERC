@@ -11,7 +11,7 @@
 
 - Two ways to checkout the webpages, as follows:
 
-    1. To make it sun on local environemnt follow the below steps:
+    1. To make it run on local environemnt follow the below steps:
         * Make sure to have _**http-server**_ package from npm.
             * To check, execute the below snippet.
 
@@ -42,7 +42,7 @@
 
 > ### Assumptions
 
-* The static contents sunch as images are dependent on the exisiting [IIIT-H SERC website](https://serc.iiit.ac.in/).
+* The static contents such as images are dependent on the exisiting [IIIT-H SERC website](https://serc.iiit.ac.in/).
 * This site doesn't have any Authentication & Authorization functionalities as of now, any user can modify the data. Thus, this site comes with by default Admin mode switched on.
 * The modifications made on this web, are non-persistent, a page reload will revert all the changes.
 * The publication details are being fetched from **dblp** website only.
