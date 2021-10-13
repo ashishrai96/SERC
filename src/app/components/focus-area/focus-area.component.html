@@ -10,7 +10,7 @@
                     <i class="pi pi-save" *ngIf="isEdit[item.label]"></i>
                 </div>
             </div>
-            <div class="content">
+            <div class="focus-area--content">
                 <p-chips [(ngModel)]="item.value" [addOnTab]="true" [addOnBlur]="true" [disabled]="!isEdit[item.label]">
                 </p-chips>
             </div>
