@@ -1,27 +1,57 @@
-# Serc
+# SSD Assignment - 2 : SERC 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
+## Software Engineering Research Center
 
-## Development server
+---
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+>### Deployment Details
 
-## Code scaffolding
+* This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7, whose **built artifacts** has been provided in a folder named **serc**.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Two ways to checkout the webpages, as follows:
 
-## Build
+    1. To make it sun on local environemnt follow the below steps:
+        * Make sure to have _**http-server**_ package from npm.
+            * To check, execute the below snippet.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+                    `http-server --version`
 
-## Running unit tests
+            * If not present, install http-server using below code snippet.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+                    `npm i http-server`
 
-## Running end-to-end tests
+                **Disclaimer** : Node.js is required to execute **_npm_** commands.
+            
+        * After having **http-server** installed, execute the below snippets, to run the code.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+                `http-server <path>/serc`
+            
+            **Discaimer** : _\<path\>_ is the directory where the folder named - **serc**, that has built artifacts, present.
 
-## Further help
+            `Example : /home/user/Documents/serc`
+            Here path is _/home/user/Documents_ which has **serc** folder.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    2. You can also check out the running code, by clicking on the below link.
+
+        [SERC by Ashish Rai](https://ashishrai96.github.io/SERC)
+
+        **PS** : In case the site is down, kindly go for the setting up the local environment, or you may reach out to me.
+
+
+
+> ### Assumptions
+
+* The static contents sunch as images are dependent on the exisiting [IIIT-H SERC website](https://serc.iiit.ac.in/).
+* This site doesn't have any Authentication & Authorization functionalities as of now, any user can modify the data. Thus, this site comes with by default Admin mode switched on.
+* The modifications made on this web, are non-persistent, a page reload will revert all the changes.
+* The publication details are being fetched from **dblp** website only.
+* There is **NO** Backend support to this application, for now.
+* The publication details for individual professor has not been updated yet.
+
+
+---
+***
+### Thank you
+***
+---
