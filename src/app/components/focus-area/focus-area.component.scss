@@ -14,7 +14,7 @@
         }
 
         .heading {
-            font-size: 14px;
+            font-size: 18px;
             font-weight: 700;
             text-decoration: underline;
             color: $black;
@@ -27,7 +27,7 @@
                 i {
                     border: 1px solid;
                     padding: 5px;
-                    font-size: 10px;
+                    font-size: 14px;
                     border-radius: 50%;
                     cursor: pointer;
                 }
@@ -51,11 +51,10 @@
 
                     li.p-chips-token.ng-star-inserted {
                         background: $off-black !important;
-                        font-size: 10px;
                         margin: 5px !important;
 
                         span{
-                            font-size: 10px;
+                            font-size: 14px;
                         }
                     }
                 }

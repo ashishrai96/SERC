@@ -3,13 +3,14 @@
 @import 'assets/variables.scss';
 @import 'assets/styles/p-editor.scss';
 @import 'assets/styles/p-toast.scss';
+@import 'assets/styles/p-quill.scss';
 
 .btn-primary{
     background-color: $primary;
     border: none;
     border-radius: 3px;
     padding: 5px 10px;
-    font-size: 12px;
+    font-size: 16px;
     color: $off-white;
     cursor: pointer;
 }

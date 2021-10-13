@@ -5,14 +5,16 @@ app-container{
     flex: 1;
     
     .card-container{
-        width: 160px;
+        width: 100%;
         flex: 1;
         display: flex;
+        justify-content: center;
         
         .card{
             display: flex;
             flex-direction: column;
             align-items: center;
+            flex: 1;
             
             .heading{
                 img{
@@ -26,13 +28,13 @@ app-container{
                 align-items: center;
                 
                 .title{
-                    font-size: 14px;
+                    font-size: 16px;
                     font-weight: 700;
                     color: $black;
                 }
                 
                 .desg {
-                    font-size: 12px;
+                    font-size: 14px;
                     color: $off-black;
                 }
             }
@@ -66,17 +68,16 @@ app-container{
                             
                             li.p-chips-token.ng-star-inserted {
                                 background: $off-black !important;
-                                font-size: 10px;
                                 margin: 5px !important;
                                 
                                 span{
-                                    font-size: 10px;
+                                    font-size: 12px;
                                 }
                             }
                         }
                         
                         .p-chip .p-chip-text{
-                            font-size: 10px;
+                            font-size: 12px;
                             margin: 0px;
                         }
                     }
@@ -86,7 +87,7 @@ app-container{
                     text-align: end;
                     
                     i {
-                        font-size: 12px;
+                        font-size: 16px;
                         border: 1px solid;
                         padding: 5px;
                         border-radius: 50%;

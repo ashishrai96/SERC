@@ -13,6 +13,7 @@
         height: 100%;
         width: 100px;
         justify-content: space-between;
+        flex: 0.15;
 
         .nav-heading {
             background: $deep-gray;
@@ -21,6 +22,7 @@
             margin-bottom: 36.5px;
             color: $off-white;
             font-weight: 700;
+            font-size: 30px;
         }
         
         .nav-item-grp {
@@ -29,7 +31,7 @@
             
             .nav-item {
                 padding: 5px 10px;
-                font-size: 12px;
+                font-size: 20px;
                 font-weight: 700;
                 color: #34808f;
             }
@@ -62,11 +64,10 @@
                 text-align: end;
 
                 img {
-                    height: 50px;
+                    height: 100px;
                 }
 
                 .title {
-                    font-size: 10px;
                     color: $black;
                     text-decoration: underline;
                 }
@@ -78,8 +79,8 @@
 .main-footer {
     display: flex;
     justify-content: space-between;
-    padding: 5px 10px;
-    font-size: 11px;
+    padding: 10px 15px;
+    font-size: 12px;
     background-color: $off-black;
     color: $off-white-blur;
 
@@ -91,18 +92,19 @@
 
     .right a {
         text-decoration: none !important;
+        vertical-align: middle;
         
         i {
             color: $off-white;
             margin: 0px 5px;
-            font-size: 10px;
+            font-size: 16px;
             cursor: pointer;
         }
 
         span.linked-in {
             background-color: $off-white;
             color: $off-black;
-            padding: 1px 3px;
+            padding: 2px 3px;
             font-weight: 700;
             cursor: pointer;
             border-radius: 2px;

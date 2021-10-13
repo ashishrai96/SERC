@@ -14,14 +14,14 @@
                 margin: 5px;
 
                 .p-chip .p-chip-text{
-                    font-size: 10px;
+                    font-size: 14px;
                     margin: 0px;
                 }
             }
         }
 
         .title {
-            font-size: 12px;
+            font-size: 16px;
             margin: 10px 5px;
             font-weight: 700;
             color: $black;
@@ -30,7 +30,7 @@
         .info {
             display: flex;
             justify-content: space-between;
-            font-size: 10px;
+            font-size: 14px;
             color: $black;
 
             .tags {
@@ -43,7 +43,7 @@
                 flex: 1;
 
                 a i {
-                    font-size: 10px;
+                    font-size: 14px;
                     cursor: pointer;
                     color: $deep-gray;
                 }
